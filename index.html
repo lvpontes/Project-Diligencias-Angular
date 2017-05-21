@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/edit.js"></script>
+    
+    <meta charset="UTF-8">
+    <title>Diligências Tikal Tech - Teste</title>
+</head>
+<body ng-app="classApp" ng-controller="classCtrl">
+    <header>
+        <div class="menu-responsive">
+           <button type="button" class="open" ng-class="{'active': isActive}" ng-click="activeButton()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="1365 23 27 19">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #fff;
+                  }
+                </style>
+              </defs>
+              <g id="Group_2" data-name="Group 2" transform="translate(1354 3)">
+                <rect id="Rectangle_14" data-name="Rectangle 14" class="cls-1" width="27" height="3" transform="translate(11 20)"/>
+                <rect id="Rectangle_15" data-name="Rectangle 15" class="cls-1" width="27" height="3" transform="translate(11 28)"/>
+                <rect id="Rectangle_16" data-name="Rectangle 16" class="cls-1" width="27" height="3" transform="translate(11 36)"/>
+              </g>
+            </svg> 
+           </button>
+           <button type="button" class="close" ng-class="{'active': isActive}">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="1757.893 22 21.213 21.213">
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill: #fff;
+                      }
+                    </style>
+                  </defs>
+                  <g id="Group_4" data-name="Group 4" transform="translate(1744 3)">
+                    <rect id="Rectangle_18" data-name="Rectangle 18" class="cls-1" width="27" height="3" transform="translate(13.893 38.092) rotate(-45)"/>
+                    <rect id="Rectangle_20" data-name="Rectangle 20" class="cls-1" width="27" height="3" transform="translate(16.015 19) rotate(45)"/>
+                  </g>
+                </svg>
+           </button>
+            
+        </div>   
+        <h1 id="logo">
+          <a href="/index.html">
+            <svg id="Group_17" data-name="Group 17" xmlns="http://www.w3.org/2000/svg" viewBox="24 23.335 152 33.665">
+              <defs>
+                <style>
+                  .cls-1, .cls-2 {
+                    fill: #fff;
+                  }
+
+                  .cls-1 {
+                    font-size: 28px;
+                    font-family: Raleway-Black, Raleway;
+                    font-weight: 800;
+                  }
+                </style>
+              </defs>
+              <text id="TESTE_1" data-name="TESTE 1" class="cls-1" transform="translate(68 50)"><tspan x="0" y="0">TESTE 1</tspan></text>
+              <path id="Subtraction_1" data-name="Subtraction 1" class="cls-2" d="M16.332,33.665A16.332,16.332,0,1,1,32.665,17.332,16.351,16.351,0,0,1,16.332,33.665Zm-6.78-23.4v3.74h4.51v11.88h4.29V14.009h4.488v-3.74Z" transform="translate(24 22.336)"/>
+            </svg>
+          </a>
+        </h1><!--
+        --><nav ng-class="{'active': isActive}">
+            <ul>
+                <label>Ordenar Por:</label>
+                <li ng-class="{'active': isActive}">Tipo</li>
+                <li>Valor</li>
+            </ul>
+        </nav>
+    </header>
+    <section id="cards-board">
+        <div class="site-container">
+            <div class="card">
+                <span class="city">São Paulo - SP</span>
+                <span class="type-application">Tipo da Diligência</span>
+                <span class="value">R$ 698,20</span>
+            </div><!--
+            --><div class="card">
+                <span class="city">São Paulo - SP</span>
+                <span class="type-application">Tipo da Diligência</span>
+                <span class="value">R$ 698,20</span>
+            </div><!--
+            --><div class="card">
+                <span class="city">São Paulo - SP</span>
+                <span class="type-application">Tipo da Diligência</span>
+                <span class="value">R$ 698,20</span>
+            </div><!--
+            --><div class="card">
+                <span class="city">São Paulo - SP</span>
+                <span class="type-application">Tipo da Diligência</span>
+                <span class="value">R$ 698,20</span>
+            </div><!--
+            --><div class="card">
+                <span class="city">São Paulo - SP</span>
+                <span class="type-application">Tipo da Diligência</span>
+                <span class="value">R$ 698,20</span>
+            </div><!--
+            --><div class="card">
+                <span class="city">São Paulo - SP</span>
+                <span class="type-application">Tipo da Diligência</span>
+                <span class="value">R$ 698,20</span>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
