@@ -26,15 +26,14 @@ header
     display: inline-block
     vertical-align: middle
     width: 30%
-    svg
+    img
         max-width: 147px
     @media screen and (max-width: 520px)
         width: 100%
         text-align: center
 .menu-responsive
     .open, .close
-        display: none
-        transition: all .2s
+        transition: all .3s
         width: 27px
         height: 19px
         padding: 0
@@ -43,14 +42,17 @@ header
         cursor: pointer
         background: transparent
         border: none
+        opacity: 0
     @media screen and (max-width: 520px)
         .open
-            display: inline-block
-            vertical-align: middle
-            &.active
-                display: none
-                + .close
-                    display: inline-block
+            opacity: 1
+        .close
+            opacity: 0
+        &.active
+            .open
+                opacity: 0
+            .close
+                opacity: 1
         
     svg
         max-width: 27px
@@ -73,12 +75,13 @@ nav
             cursor: pointer
             margin: 0 12px
             transition: all .2s
+            border-bottom: 2px solid transparent
             &.active
                 color: #fff
                 border-bottom: 2px solid $special-color 
     @media screen and (max-width: 520px)
         opacity: 0
-        transition: all .2s
+        transition: all 0.3s
         position: absolute
         top: 76px
         left: -15000px
@@ -115,6 +118,7 @@ nav
         display: inline-block
         vertical-align: top
         padding: 0 0 36px 0
+        min-height: 197px
         @media screen and (max-width: 1023px)
             width: 48%
         @media screen and (max-width: 600px)

@@ -19,7 +19,7 @@ header {
   display: inline-block;
   vertical-align: middle;
   width: 30%; }
-  #logo svg {
+  #logo img {
     max-width: 147px; }
   @media screen and (max-width: 520px) {
     #logo {
@@ -27,8 +27,7 @@ header {
       text-align: center; } }
 
 .menu-responsive .open, .menu-responsive .close {
-  display: none;
-  transition: all 0.2s;
+  transition: all 0.3s;
   width: 27px;
   height: 19px;
   padding: 0;
@@ -36,15 +35,17 @@ header {
   top: 23px;
   cursor: pointer;
   background: transparent;
-  border: none; }
+  border: none;
+  opacity: 0; }
 @media screen and (max-width: 520px) {
   .menu-responsive .open {
-    display: inline-block;
-    vertical-align: middle; }
-    .menu-responsive .open.active {
-      display: none; }
-      .menu-responsive .open.active + .close {
-        display: inline-block; } }
+    opacity: 1; }
+  .menu-responsive .close {
+    opacity: 0; }
+  .menu-responsive.active .open {
+    opacity: 0; }
+  .menu-responsive.active .close {
+    opacity: 1; } }
 .menu-responsive svg {
   max-width: 27px; }
 
@@ -65,14 +66,15 @@ nav {
     color: #796F90;
     cursor: pointer;
     margin: 0 12px;
-    transition: all 0.2s; }
+    transition: all 0.2s;
+    border-bottom: 2px solid transparent; }
     nav ul li.active {
       color: #fff;
       border-bottom: 2px solid #37b6b3; }
   @media screen and (max-width: 520px) {
     nav {
       opacity: 0;
-      transition: all 0.2s;
+      transition: all 0.3s;
       position: absolute;
       top: 76px;
       left: -15000px;
@@ -108,7 +110,8 @@ nav {
     margin: 0 0.8% 18px;
     display: inline-block;
     vertical-align: top;
-    padding: 0 0 36px 0; }
+    padding: 0 0 36px 0;
+    min-height: 197px; }
     @media screen and (max-width: 1023px) {
       #cards-board .card {
         width: 48%; } }
